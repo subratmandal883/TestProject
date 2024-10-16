@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html  lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Conditional</title>
+</head>
+<body>
+	<h2>Welcome to My Conditional (if) expression</h2>
+
+	<p th:if="${number1>number2}">
+		<span th:text="${number1}+' is greater then '+${number2}"></span>
+	</p>
+	<p th:if="${number1<number2}">
+		<span th:text="${number2}+' is greater then '+${number1}"></span>
+	</p>
+</body>
+</html>
